@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best PC Parts for Every Price Point</title>
+    <title>Best PC Parts for Every Build</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Best PC Parts for Every Price Point</h1>
+        <h1>Best PC Parts for Every Build</h1>
         <nav>
             <ul>
                 <li><a href="#cpu">CPU</a></li>
@@ -17,6 +17,8 @@
                 <li><a href="#ram">RAM</a></li>
                 <li><a href="#storage">Storage</a></li>
                 <li><a href="#motherboard">Motherboard</a></li>
+                <li><a href="#power-supply">Power Supply</a></li>
+                <li><a href="#cpu-cooling">CPU Cooling</a></li>
             </ul>
         </nav>
     </header>
@@ -24,37 +26,38 @@
     <main>
         <section id="cpu">
             <h2>Best CPUs</h2>
-            <div class="price-point">
-                <h3>Budget</h3>
-                <div class="part-list" id="cpu-budget"></div>
-            </div>
-            <div class="price-point">
-                <h3>Mid-Range</h3>
-                <div class="part-list" id="cpu-mid"></div>
-            </div>
-            <div class="price-point">
-                <h3>High-End</h3>
-                <div class="part-list" id="cpu-high"></div>
-            </div>
+            <div class="part-list" id="cpu-list"></div>
         </section>
 
         <section id="gpu">
             <h2>Best GPUs</h2>
-            <div class="price-point">
-                <h3>Budget</h3>
-                <div class="part-list" id="gpu-budget"></div>
-            </div>
-            <div class="price-point">
-                <h3>Mid-Range</h3>
-                <div class="part-list" id="gpu-mid"></div>
-            </div>
-            <div class="price-point">
-                <h3>High-End</h3>
-                <div class="part-list" id="gpu-high"></div>
-            </div>
+            <div class="part-list" id="gpu-list"></div>
         </section>
 
-        <!-- Add sections for RAM, Storage, and Motherboard similarly -->
+        <section id="ram">
+            <h2>Best RAM</h2>
+            <div class="part-list" id="ram-list"></div>
+        </section>
+
+        <section id="storage">
+            <h2>Best Storage</h2>
+            <div class="part-list" id="storage-list"></div>
+        </section>
+
+        <section id="motherboard">
+            <h2>Best Motherboards</h2>
+            <div class="part-list" id="motherboard-list"></div>
+        </section>
+
+        <section id="power-supply">
+            <h2>Best Power Supplies</h2>
+            <div class="part-list" id="power-supply-list"></div>
+        </section>
+
+        <section id="cpu-cooling">
+            <h2>Best CPU Coolers</h2>
+            <div class="part-list" id="cpu-cooling-list"></div>
+        </section>
     </main>
 
     <footer>
@@ -64,4 +67,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+      
 
