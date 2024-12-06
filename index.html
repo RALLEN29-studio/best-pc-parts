@@ -4,290 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best PC Parts for Every Build</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Best PC Parts for Every Build</h1>
-        <nav>
-            <ul>
-                <li><a href="cpu.html">CPU</a></li>
-                <li><a href="gpu.html">GPU</a></li>
-                <li><a href="ram.html">RAM</a></li>
-                <li><a href="storage.html">Storage</a></li>
-                <li><a href="motherboard.html">Motherboard</a></li>
-                <li><a href="power-supply.html">Power Supply</a></li>
-                <li><a href="cpu-cooling.html">CPU Cooling</a></li>
-            </ul>
-        </nav>
-    </header>
+    <title>Best PC Parts</title>
+    <style>
+        /* Set the background image to a gaming PC theme */
+        body {
+            background-image: url('https://example.com/gaming-pc.jpg');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-    <main>
-        <section id="cpu">
-            <h2>Best CPUs</h2>
-            <div class="part-list" id="cpu-list"></div>
-        </section>
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
 
-        <section id="gpu">
-            <h2>Best GPUs</h2>
-            <div class="part-list" id="gpu-list"></div>
-        </section>
+        header h1 {
+            margin: 0;
+        }
 
-        <section id="ram">
-            <h2>Best RAM</h2>
-            <div class="part-list" id="ram-list"></div>
-        </section>
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-        <section id="storage">
-            <h2>Best Storage</h2>
-            <div class="part-list" id="storage-list"></div>
-        </section>
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
 
-        <section id="motherboard">
-            <h2>Best Motherboards</h2>
-            <div class="part-list" id="motherboard-list"></div>
-        </section>
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-        <section id="power-supply">
-            <h2>Best Power Supplies</h2>
-            <div class="part-list" id="power-supply-list"></div>
-        </section>
-
-        <section id="cpu-cooling">
-            <h2>Best CPU Coolers</h2>
-            <div class="part-list" id="cpu-cooling-list"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Best PC Parts</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background: url('https://example.com/gaming-pc-image.jpg') no-repeat center center fixed;
-    background-size: cover; /* Ensures background covers the entire page */
-    color: white;
-}
-
-header {
-    background-color: rgba(51, 51, 51, 0.7); /* Dark overlay for readability */
-    color: white;
-    padding: 1.5em 0;
-    text-align: center;
-    border-bottom: 2px solid #444;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 1em;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ff9900;
-}
-
-main {
-    padding: 3em 5%;
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
-    border-radius: 10px;
-    margin-top: -10px; /* Lift content to show more background */
-}
-
-section {
-    margin-bottom: 3em;
-}
-
-h2 {
-    text-align: center;
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 1.5em;
-}
-
-.part-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.part-item {
-    background-color: #fff;
-    padding: 1.5em;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.part-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.part-item img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1em;
-}
-
-.part-item h3 {
-    color: #333;
-    font-size: 1.4em;
-    margin-bottom: 0.5em;
-}
-
-.part-item p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 1em;
-}
-
-.part-item a {
-    display: inline-block;
-    margin-top: 1em;
-    padding: 10px 20px;
-    background-color: #ff9900;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.part-item a:hover {
-    background-color: #ff7700;
-}
-
-footer {
-    text-align: center;
-    padding: 1.5em 0;
-    background-color: #333;
-    color: white;
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best PC Parts for Every Build</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Best PC Parts for Every Build</h1>
-        <nav>
-            <ul>
-                <li><a href="cpu.html">CPU</a></li>
-                <li><a href="gpu.html">GPU</a></li>
-                <li><a href="ram.html">RAM</a></li>
-                <li><a href="storage.html">Storage</a></li>
-                <li><a href="motherboard.html">Motherboard</a></li>
-                <li><a href="power-supply.html">Power Supply</a></li>
-                <li><a href="cpu-cooling.html">CPU Cooling</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="cpu">
-            <h2>Best CPUs</h2>
-            <div class="part-list">
-                <div class="part-item">
-                    <img src="https://example.com/cpu1.jpg" alt="AMD Ryzen 5 7600X">
-                    <h3>AMD Ryzen 5 7600X</h3>
-                    <p>6 Cores, 12 Threads, 4.5GHz</p>
-                    <p>Price: $300</p>
-                    <a href="https://www.amazon.com/s?k=AMD+Ryzen+5+7600X&i=electronics&ref=nb_sb_noss_2" target="_blank">View on Amazon</a>
-                </div>
-                <div class="part-item">
-                    <img src="https://example.com/cpu2.jpg" alt="Intel Core i5-13600K">
-                    <h3>Intel Core i5-13600K</h3>
-                    <p>14 Cores, 20 Threads, 5.1GHz</p>
-                    <p>Price: $350</p>
-                    <a href="https://www.amazon.com/s?k=Intel+Core+i5-13600K&i=electronics&ref=nb_sb_noss_2" target="_blank">View on Amazon</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="gpu">
-            <h2>Best GPUs</h2>
-            <div class="part-list">
-                <div class="part-item">
-                    <img src="https://example.com/gpu1.jpg" alt="NVIDIA RTX 4080">
-                    <h3>NVIDIA RTX 4080</h3>
-                    <p>16GB GDDR6X</p>
-                    <p>Price: $1200</p>
-                    <a href="https://www.amazon.com/s?k=NVIDIA+RTX+4080&i=electronics&ref=nb_sb_noss_2" target="_blank">View on Amazon</a>
-                </div>
-                <div class="part-item">
-                    <img src="https://example.com/gpu2.jpg" alt="AMD Radeon RX 7900XTX">
-                    <h3>AMD Radeon RX 7900XTX</h3>
-                    <p>24GB GDDR6</p>
-                    <p>Price: $1300</p>
-                    <a href="https://www.amazon.com/s?k=AMD+Radeon+RX+7900XTX&i=electronics&ref=nb_sb_noss_2" target="_blank">View on Amazon</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="ram">
-            <h2>Best RAM</h2>
-            <div class="part-list">
-                <div class="part-item">
-                    <img src="https://example.com/ram1.jpg" alt="Corsair Vengeance LPX 16GB">
-                    <h3>Corsair Vengeance LPX 16GB</h3>
-                    <p>3200MHz</p>
-                    <p>Price: $80</p>
-                    <a href="https://www.amazon.com/s?k=Corsair+Vengeance+LPX+16GB+i=electronics&ref=nb_sb_noss_2" target="_blank">View on Amazon</a>
-                </div>
-                <div class="part-item">
-                    <img src="https://example.com/ram2.jpg" alt="G.Skill Trident Z 16GB">
-                    <h3>G.Skill Trident Z 16GB</h3>
-                    <p>3600MHz</p>
-                    <p>Price: $90</p>
-                    <a href="https://www.amazon.com/s?k=G.Skill+Trident+Z+16GB&i=electronics&ref=nb_sb_noss_2" target="_blank">View on Amazon</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Best PC Parts</p>
-    </footer>
-
-    <script src="script.js"></script
-
-      
+        nav ul li a:hover {
+            text-decoration: underline;
+     
 
