@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best PC Parts - Your Guide to Building the Perfect PC</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -87,23 +88,6 @@
       margin-top: 50px;
     }
 
-    /* Styling for clickable category link */
-    .category-section a.category-link {
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .category-section a.category-link:hover {
-      color: #0073e6;
-    }
-
-    /* Hover effect for the section headers */
-    .category-section a.category-link:hover {
-      text-decoration: underline;
-    }
-
   </style>
 </head>
 <body>
@@ -113,7 +97,7 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="cpu.html">CPU</a></li> <!-- Updated this link to point to the CPU page -->
+        <li><a href="/cpu">CPU</a></li>
         <li><a href="/gpu">GPU</a></li>
         <li><a href="/motherboard">Motherboard</a></li>
         <li><a href="/ram">RAM</a></li>
@@ -125,9 +109,8 @@
   </header>
 
   <main>
-    <!-- CPU Section with clickable title -->
     <section class="category-section" id="cpu">
-      <h2><a href="cpu.html" class="category-link">Best CPUs for Every Price Range</a></h2> <!-- Clickable CPU section -->
+      <h2>Best CPUs for Every Price Range</h2>
       
       <h3>Entry-Level CPUs ($100 - $200)</h3>
       <ul>
@@ -157,7 +140,6 @@
       </ul>
     </section>
 
-    <!-- GPU Section -->
     <section class="category-section" id="gpu">
       <h2>Best GPUs for Every Price Range</h2>
       
@@ -189,7 +171,67 @@
       </ul>
     </section>
 
-    <!-- More sections for other parts like Motherboard, RAM, etc. -->
+    <section class="category-section" id="motherboard">
+      <h2>Best Motherboards for Every Price Range</h2>
+
+      <h3>Entry-Level Motherboards ($50 - $150)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B07VP7YFZZ" target="_blank">ASRock B450M PRO4</a>
+          <p>$79.99 - Affordable motherboard for Ryzen builds.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>Mid-Range Motherboards ($150 - $250)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08G4KZDZ7" target="_blank">MSI MAG B550 TOMAHAWK</a>
+          <p>$199.99 - Great for gaming and multi-tasking.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>High-End Motherboards ($250+)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08PB9XQ2R" target="_blank">ASUS ROG Strix Z690-E</a>
+          <p>$399.99 - Premium features for high-end builds.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+    </section>
+
+    <section class="category-section" id="ram">
+      <h2>Best RAM for Every Price Range</h2>
+
+      <h3>Entry-Level RAM ($40 - $100)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B07DP2D4DX" target="_blank">Corsair Vengeance LPX 16GB (2 x 8GB)</a>
+          <p>$69.99 - Reliable performance for budget systems.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>Mid-Range RAM ($100 - $200)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08P5YW1J8" target="_blank">G.Skill Ripjaws V 16GB (2 x 8GB)</a>
+          <p>$119.99 - Fast and affordable performance.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>High-End RAM ($200+)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08GVX9YHH" target="_blank">Corsair Vengeance LPX 32GB (2 x 16GB)</a>
+          <p>$199.99 - High capacity for demanding workloads.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+    </section>
 
   </main>
 
