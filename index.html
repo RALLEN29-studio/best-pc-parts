@@ -87,6 +87,7 @@
       margin-top: 50px;
     }
 
+    /* Styling for clickable category link */
     .category-section a.category-link {
       font-size: 20px;
       font-weight: bold;
@@ -97,6 +98,12 @@
     .category-section a.category-link:hover {
       color: #0073e6;
     }
+
+    /* Hover effect for the section headers */
+    .category-section a.category-link:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
@@ -106,7 +113,7 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="cpu.html">CPU</a></li> <!-- Updated this to link to a separate CPU page -->
+        <li><a href="cpu.html">CPU</a></li> <!-- Updated this link to point to the CPU page -->
         <li><a href="/gpu">GPU</a></li>
         <li><a href="/motherboard">Motherboard</a></li>
         <li><a href="/ram">RAM</a></li>
@@ -118,8 +125,9 @@
   </header>
 
   <main>
+    <!-- CPU Section with clickable title -->
     <section class="category-section" id="cpu">
-      <h2><a href="cpu.html" class="category-link">Best CPUs for Every Price Range</a></h2> <!-- This makes the whole heading clickable -->
+      <h2><a href="cpu.html" class="category-link">Best CPUs for Every Price Range</a></h2> <!-- Clickable CPU section -->
       
       <h3>Entry-Level CPUs ($100 - $200)</h3>
       <ul>
@@ -149,6 +157,7 @@
       </ul>
     </section>
 
+    <!-- GPU Section -->
     <section class="category-section" id="gpu">
       <h2>Best GPUs for Every Price Range</h2>
       
