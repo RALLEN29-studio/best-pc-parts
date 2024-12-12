@@ -1,243 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best PC Parts - Your Guide to Building the Perfect PC</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best PC Parts by Price Range</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background: #222;
+            color: #fff;
+        }
 
-    header nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        /* Header Section */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+        }
 
-    header nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
+        nav ul {
+            list-style: none;
+        }
 
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-    main {
-      padding: 20px;
-    }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
 
-    h1 {
-      color: #333;
-    }
+        nav ul li a:hover {
+            color: #FFD700;  /* Gold color on hover */
+        }
 
-    .category-section {
-      margin-top: 30px;
-    }
+        /* Background and Main Section */
+        #main-content {
+            background: url('your-image-path.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
 
-    .category-section h2 {
-      color: #333;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+        /* Section Styling */
+        .content-section {
+            margin-bottom: 40px;
+        }
 
-    .category-section ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        .content-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #FFD700;
+        }
 
-    .category-section ul li {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-    }
+        .content-section p {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    .category-section ul li a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-      display: block;
-      margin-bottom: 5px;
-    }
+        .content-section ul {
+            list-style: none;
+            text-align: center;
+        }
 
-    .category-section ul li p {
-      font-size: 14px;
-      color: #555;
-    }
+        .content-section ul li {
+            margin: 10px 0;
+        }
 
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      margin-top: 50px;
-    }
+        .content-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
 
-  </style>
+        .content-section ul li a:hover {
+            color: #FFD700;  /* Gold color on hover */
+        }
+
+        /* Mobile and Responsiveness */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Banner Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#cpu">CPU</a></li>
+                <li><a href="#gpu">GPU</a></li>
+                <li><a href="#ram">RAM</a></li>
+                <li><a href="#storage">Storage</a></li>
+                <li><a href="#motherboard">Motherboard</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Best PC Parts</h1>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/cpu">CPU</a></li>
-        <li><a href="/gpu">GPU</a></li>
-        <li><a href="/motherboard">Motherboard</a></li>
-        <li><a href="/ram">RAM</a></li>
-        <li><a href="/storage">Storage</a></li>
-        <li><a href="/power-supply">Power Supply</a></li>
-        <li><a href="/case">PC Case</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main Content Section -->
+    <section id="main-content">
+        <div class="content-section" id="cpu">
+            <h2>Best CPUs for Every Price Range</h2>
+            <p>Explore the best CPU options for different budgets.</p>
+            <ul>
+                <li><a href="your-link-here">Best Budget CPU</a></li>
+                <li><a href="your-link-here">Best Mid-Range CPU</a></li>
+                <li><a href="your-link-here">Best High-End CPU</a></li>
+            </ul>
+        </div>
 
-  <main>
-    <section class="category-section" id="cpu">
-      <h2>Best CPUs for Every Price Range</h2>
-      
-      <h3>Entry-Level CPUs ($100 - $200)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08VJYV72B" target="_blank">AMD Ryzen 5 3600</a>
-          <p>$159.99 - Great performance for budget builds.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
+        <div class="content-section" id="gpu">
+            <h2>Best GPUs for Every Price Range</h2>
+            <p>Choose from the top GPUs based on your budget.</p>
+            <ul>
+                <li><a href="your-link-here">Best Budget GPU</a></li>
+                <li><a href="your-link-here">Best Mid-Range GPU</a></li>
+                <li><a href="your-link-here">Best High-End GPU</a></li>
+            </ul>
+        </div>
 
-      <h3>Mid-Range CPUs ($200 - $500)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08MNXZWY5" target="_blank">Intel Core i7-12700K</a>
-          <p>$399.99 - Excellent performance for gaming and productivity.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
+        <div class="content-section" id="ram">
+            <h2>Best RAM for Every Price Range</h2>
+            <p>Find the best RAM options within your budget.</p>
+            <ul>
+                <li><a href="your-link-here">Best Budget RAM</a></li>
+                <li><a href="your-link-here">Best Mid-Range RAM</a></li>
+                <li><a href="your-link-here">Best High-End RAM</a></li>
+            </ul>
+        </div>
 
-      <h3>High-End CPUs ($500+)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08GG6X44D" target="_blank">AMD Ryzen 9 7950X</a>
-          <p>$799.99 - Top-tier performance for enthusiasts.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
+        <div class="content-section" id="storage">
+            <h2>Best Storage for Every Price Range</h2>
+            <p>Get the most reliable storage solutions for your PC.</p>
+            <ul>
+                <li><a href="your-link-here">Best Budget Storage</a></li>
+                <li><a href="your-link-here">Best Mid-Range Storage</a></li>
+                <li><a href="your-link-here">Best High-End Storage</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="motherboard">
+            <h2>Best Motherboards for Every Price Range</h2>
+            <p>Select the ideal motherboard for your build.</p>
+            <ul>
+                <li><a href="your-link-here">Best Budget Motherboard</a></li>
+                <li><a href="your-link-here">Best Mid-Range Motherboard</a></li>
+                <li><a href="your-link-here">Best High-End Motherboard</a></li>
+            </ul>
+        </div>
     </section>
-
-    <section class="category-section" id="gpu">
-      <h2>Best GPUs for Every Price Range</h2>
-      
-      <h3>Entry-Level GPUs ($100 - $300)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08P2D46F7" target="_blank">NVIDIA GTX 1650</a>
-          <p>$169.99 - Great for 1080p gaming on a budget.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-
-      <h3>Mid-Range GPUs ($300 - $700)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08T5RNRNJ" target="_blank">NVIDIA RTX 3060</a>
-          <p>$439.99 - Ideal for 1440p gaming.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-
-      <h3>High-End GPUs ($700+)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08N5M7S6K" target="_blank">NVIDIA RTX 3080</a>
-          <p>$799.99 - Best for 4K gaming and high-end performance.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-    </section>
-
-    <section class="category-section" id="motherboard">
-      <h2>Best Motherboards for Every Price Range</h2>
-
-      <h3>Entry-Level Motherboards ($50 - $150)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B07VP7YFZZ" target="_blank">ASRock B450M PRO4</a>
-          <p>$79.99 - Affordable motherboard for Ryzen builds.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-
-      <h3>Mid-Range Motherboards ($150 - $250)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08G4KZDZ7" target="_blank">MSI MAG B550 TOMAHAWK</a>
-          <p>$199.99 - Great for gaming and multi-tasking.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-
-      <h3>High-End Motherboards ($250+)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08PB9XQ2R" target="_blank">ASUS ROG Strix Z690-E</a>
-          <p>$399.99 - Premium features for high-end builds.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-    </section>
-
-    <section class="category-section" id="ram">
-      <h2>Best RAM for Every Price Range</h2>
-
-      <h3>Entry-Level RAM ($40 - $100)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B07DP2D4DX" target="_blank">Corsair Vengeance LPX 16GB (2 x 8GB)</a>
-          <p>$69.99 - Reliable performance for budget systems.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-
-      <h3>Mid-Range RAM ($100 - $200)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08P5YW1J8" target="_blank">G.Skill Ripjaws V 16GB (2 x 8GB)</a>
-          <p>$119.99 - Fast and affordable performance.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-
-      <h3>High-End RAM ($200+)</h3>
-      <ul>
-        <li>
-          <a href="https://www.amazon.com/dp/B08GVX9YHH" target="_blank">Corsair Vengeance LPX 32GB (2 x 16GB)</a>
-          <p>$199.99 - High capacity for demanding workloads.</p>
-        </li>
-        <!-- More products can be added here -->
-      </ul>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Best PC Parts for Every Budget | Links may be affiliate links. Prices and availability are subject to change.</p>
-  </footer>
 
 </body>
 </html>
