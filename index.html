@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best PC Parts</title>
-  
+  <title>Best PC Parts - Your Guide to Building the Perfect PC</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -44,17 +43,22 @@
       color: #333;
     }
 
-    h2 {
-      color: #333;
-      font-size: 24px;
+    .category-section {
+      margin-top: 30px;
     }
 
-    ul {
+    .category-section h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .category-section ul {
       list-style-type: none;
       padding: 0;
     }
 
-    ul li {
+    .category-section ul li {
       background-color: #fff;
       border: 1px solid #ddd;
       padding: 10px;
@@ -62,13 +66,15 @@
       border-radius: 5px;
     }
 
-    ul li a {
+    .category-section ul li a {
       text-decoration: none;
       font-weight: bold;
       color: #333;
+      display: block;
+      margin-bottom: 5px;
     }
 
-    ul li p {
+    .category-section ul li p {
       font-size: 14px;
       color: #555;
     }
@@ -81,55 +87,107 @@
       margin-top: 50px;
     }
 
-    .categories {
-      margin-top: 20px;
+    .category-section a.category-link {
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
     }
 
-    .categories ul li {
-      margin-bottom: 10px;
+    .category-section a.category-link:hover {
+      color: #0073e6;
     }
-
   </style>
 </head>
 <body>
+
   <header>
     <h1>Best PC Parts</h1>
     <nav>
       <ul>
-        <li><a href="cpu/best_cpu.html">CPU</a></li>
-        <li><a href="gpu.html">GPU</a></li>
-        <li><a href="motherboard.html">Motherboard</a></li>
-        <li><a href="ram.html">RAM</a></li>
-        <li><a href="storage.html">Storage</a></li>
-        <li><a href="powersupply.html">Power Supply</a></li>
-        <li><a href="case.html">PC Case</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="cpu.html">CPU</a></li> <!-- Updated this to link to a separate CPU page -->
+        <li><a href="/gpu">GPU</a></li>
+        <li><a href="/motherboard">Motherboard</a></li>
+        <li><a href="/ram">RAM</a></li>
+        <li><a href="/storage">Storage</a></li>
+        <li><a href="/power-supply">Power Supply</a></li>
+        <li><a href="/case">PC Case</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="intro">
-      <h2>Welcome to the Best PC Parts Guide!</h2>
-      <p>Explore the best PC parts for every budget and find the best deals on Amazon. Whether you're building a budget-friendly PC or a high-end gaming rig, we’ve got you covered!</p>
-    </section>
-
-    <section class="categories">
-      <h2>Browse by Category:</h2>
+    <section class="category-section" id="cpu">
+      <h2><a href="cpu.html" class="category-link">Best CPUs for Every Price Range</a></h2> <!-- This makes the whole heading clickable -->
+      
+      <h3>Entry-Level CPUs ($100 - $200)</h3>
       <ul>
-        <li><a href="cpu/best_cpu.html">CPU</a> - Processors for every performance level</li>
-        <li><a href="gpu.html">GPU</a> - Graphics cards for gaming and design</li>
-        <li><a href="motherboard.html">Motherboard</a> - The heart of your PC build</li>
-        <li><a href="ram.html">RAM</a> - Choose the right memory for speed</li>
-        <li><a href="storage.html">Storage</a> - Fast SSDs and large HDDs</li>
-        <li><a href="powersupply.html">Power Supply</a> - Keep your PC powered</li>
-        <li><a href="case.html">PC Case</a> - Choose your build's enclosure</li>
+        <li>
+          <a href="https://www.amazon.com/dp/B08VJYV72B" target="_blank">AMD Ryzen 5 3600</a>
+          <p>$159.99 - Great performance for budget builds.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>Mid-Range CPUs ($200 - $500)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08MNXZWY5" target="_blank">Intel Core i7-12700K</a>
+          <p>$399.99 - Excellent performance for gaming and productivity.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>High-End CPUs ($500+)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08GG6X44D" target="_blank">AMD Ryzen 9 7950X</a>
+          <p>$799.99 - Top-tier performance for enthusiasts.</p>
+        </li>
+        <!-- More products can be added here -->
       </ul>
     </section>
+
+    <section class="category-section" id="gpu">
+      <h2>Best GPUs for Every Price Range</h2>
+      
+      <h3>Entry-Level GPUs ($100 - $300)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08P2D46F7" target="_blank">NVIDIA GTX 1650</a>
+          <p>$169.99 - Great for 1080p gaming on a budget.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>Mid-Range GPUs ($300 - $700)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08T5RNRNJ" target="_blank">NVIDIA RTX 3060</a>
+          <p>$439.99 - Ideal for 1440p gaming.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+
+      <h3>High-End GPUs ($700+)</h3>
+      <ul>
+        <li>
+          <a href="https://www.amazon.com/dp/B08N5M7S6K" target="_blank">NVIDIA RTX 3080</a>
+          <p>$799.99 - Best for 4K gaming and high-end performance.</p>
+        </li>
+        <!-- More products can be added here -->
+      </ul>
+    </section>
+
+    <!-- More sections for other parts like Motherboard, RAM, etc. -->
+
   </main>
 
   <footer>
-    <p>Best PC Parts | Affiliate links included. Prices and availability may vary.</p>
+    <p>Best PC Parts for Every Budget | Links may be affiliate links. Prices and availability are subject to change.</p>
   </footer>
+
 </body>
 </html>
 
