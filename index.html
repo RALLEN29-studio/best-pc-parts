@@ -1,181 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best PC Parts by Price Range</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+# Define the components for building a PC with different price ranges
+components = {
+    "CPU": {
+        "Low-End": "Intel i5-13600KF Processor - [Link](https://www.amazon.com/Intel-i5-13600KF-Desktop-Processor-P-cores/dp/B0BCF5CZ16/ref=sr_1_1)",
+        "Mid-Range": "Intel i7-12700K Processor - [Link](https://www.amazon.com/Intel-i7-12700K-Desktop-Processor-Unlocked/dp/B09FXNVDBJ/ref=sr_1_2)",
+        "High-End": "Intel i9-12900K Processor - [Link](https://www.amazon.com/Intel-i9-12900K-Desktop-Processor-Unlocked/dp/B09FXDLX95/ref=sr_1_3)"
+    },
+    "Cooler": {
+        "Low-End": "Thermalright Refined SE - AX120 - [Link](https://www.amazon.com/Thermalright-Refined-SE-Technology-AX120/dp/B09LHBFPJ6/ref=sr_1_9)",
+        "Mid-Range": "Thermalright Peerless SE - [Link](https://www.amazon.com/Thermalright-Peerless-SE-Aluminium-Technology/dp/B09LGY38L4/ref=sr_1_4)",
+        "High-End": "NZXT Kraken 240 - [Link](https://www.amazon.com/NZXT-Kraken-240-%E2%80%8ERL-KN240-B1-High-Performance/dp/B0BY3HNXMS/ref=sr_1_3)"
+    },
+    "Storage": {
+        "Low-End": "Crucial P3 500GB PCIe SSD - [Link](https://www.amazon.com/Crucial-Plus-500GB-PCIe-5000MB/dp/B0B25NTRGD/ref=sr_1_8_mod_primary_new)",
+        "Mid-Range": "Crucial P310 1TB PCIe Gen4 SSD - [Link](https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8VPSHV/ref=sr_1_1_sspa)",
+        "High-End": "Crucial Plus 6TB PCIe NAND SSD - [Link](https://www.amazon.com/Crucial-Plus-PCIe-NAND-5000MB/dp/B0B25M8FXX/ref=sxin_16_pa_sp_search_thematic_sspa)"
+    },
+    "RAM": {
+        "Low-End": "Corsair Vengeance 16GB DDR4 RAM - [Link](https://www.amazon.com/Corsair-VENGEANCE-3200MHz-Compatible-Computer/dp/B07RS1G6XW/ref=sr_1_3)",
+        "Mid-Range": "Corsair Vengeance 32GB DDR5 RAM - [Link](https://www.amazon.com/CORSAIR-VENGEANCE-6400MHz-Compatible-Computer/dp/B0BXHC74WD/ref=sr_1_4)",
+        "High-End": "Corsair Vengeance 64GB DDR5 RAM - [Link](https://www.amazon.com/CORSAIR-VENGEANCE-6400MHz-Compatible-Computer/dp/B0BTNW9XFZ/ref=sr_1_3)"
+    },
+    "GPU": {
+        "Low-End": "PNY GeForce RTX 3060 Verto Graphics Card - [Link](https://www.amazon.com/PNY-GeForce-RTXTM-Verto-Graphics/dp/B0BC1GWMQX/ref=sr_1_1_sspa)",
+        "Mid-Range": "ASUS GeForce RTX 4070 - [Link](https://www.amazon.com/ASUS-DisplayPort-2-5-slot-Axial-tech-technology/dp/B0CVCKX2GD/ref=sr_1_1?crid=1DHMH99L0MMLL)",
+        "High-End": "NVIDIA GeForce RTX 4090 Founders Edition - [Link](https://www.amazon.com/NVIDIA-GeForce-Founders-Graphics-GDDR6X/dp/B0BJFRT43X/ref=sr_1_3)"
+    },
+    "Motherboard": {
+        "Low-End": "MSI PRO B760M-P DDR4 Motherboard - [Link](https://www.amazon.com/MSI-PRO-B760M-P-DDR4-Motherboard/dp/B0BZ9T4KF6/ref=sr_1_12)",
+        "Mid-Range": "ASUS ROG B550-F II Motherboard - [Link](https://www.amazon.com/ROG-B550-F-II-Motherboard-Addressable/dp/B09GP7P1XS/ref=sr_1_1_mod_primary_new)",
+        "High-End": "ASUS ROG Strix Z790-E Gaming WiFi Motherboard - [Link](https://www.amazon.com/ASUS-ROG-II-motherboard-front-panel/dp/B0CJMQ2S5M/ref=sr_1_1?crid=30UVPQTQT7MEO)"
+    }
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #222;
-            color: #fff;
-        }
-
-        /* Header Section */
-        header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-        }
-
-        nav ul li a:hover {
-            color: #FFD700;  /* Gold color on hover */
-        }
-
-        /* Background and Main Section */
-        #main-content {
-            background: url(https://th.bing.com/th/id/OIP.-Kc__lM0hq7i2V5lH2UMbAHaHa?rs=1&pid=ImgDetMain)no-repeat center center fixed;
-            background-size: cover;
-            padding: 50px 20px;
-            min-height: 100vh;
-        }
-
-        /* Section Styling */
-        .content-section {
-            margin-bottom: 40px;
-        }
-
-        .content-section h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #FFD700;
-        }
-
-        .content-section p {
-            font-size: 18px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .content-section ul {
-            list-style: none;
-            text-align: center;
-        }
-
-        .content-section ul li {
-            margin: 10px 0;
-        }
-
-        .content-section ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        .content-section ul li a:hover {
-            color: #FFD700;  /* Gold color on hover */
-        }
-
-        /* Mobile and Responsiveness */
-        @media (max-width: 768px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Banner Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#cpu">CPU</a></li>
-                <li><a href="#gpu">GPU</a></li>
-                <li><a href="#ram">RAM</a></li>
-                <li><a href="#storage">Storage</a></li>
-                <li><a href="#motherboard">Motherboard</a></li>
-                <li><a href="#cooling">Cooling</a></li> <!-- Added Cooling section link -->
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content Section -->
-    <section id="main-content">
-        <div class="content-section" id="cpu">
-            <h2>Best CPUs for Every Price Range</h2>
-            <p>Explore the best CPU options for different budgets.</p>
-            <ul>
-                <li><a href="https://www.amazon.com/s?k=best+budget+cpu" target="_blank">Best Budget CPU</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+mid+range+cpu" target="_blank">Best Mid-Range CPU</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+high+end+cpu" target="_blank">Best High-End CPU</a></li>
-            </ul>
-        </div>
-
-        <div class="content-section" id="gpu">
-            <h2>Best GPUs for Every Price Range</h2>
-            <p>Choose from the top GPUs based on your budget.</p>
-            <ul>
-                <li><a href="https://www.amazon.com/s?k=best+budget+gpu" target="_blank">Best Budget GPU</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+mid+range+gpu" target="_blank">Best Mid-Range GPU</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+high+end+gpu" target="_blank">Best High-End GPU</a></li>
-            </ul>
-        </div>
-
-        <div class="content-section" id="ram">
-            <h2>Best RAM for Every Price Range</h2>
-            <p>Find the best RAM options within your budget.</p>
-            <ul>
-                <li><a href="https://www.amazon.com/s?k=best+budget+ram" target="_blank">Best Budget RAM</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+mid+range+ram" target="_blank">Best Mid-Range RAM</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+high+end+ram" target="_blank">Best High-End RAM</a></li>
-            </ul>
-        </div>
-
-        <div class="content-section" id="storage">
-            <h2>Best Storage for Every Price Range</h2>
-            <p>Get the most reliable storage solutions for your PC.</p>
-            <ul>
-                <li><a href="https://www.amazon.com/s?k=best+budget+storage" target="_blank">Best Budget Storage</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+mid+range+storage" target="_blank">Best Mid-Range Storage</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+high+end+storage" target="_blank">Best High-End Storage</a></li>
-            </ul>
-        </div>
-
-        <div class="content-section" id="motherboard">
-            <h2>Best Motherboards for Every Price Range</h2>
-            <p>Select the ideal motherboard for your build.</p>
-            <ul>
-                <li><a href="https://www.amazon.com/s?k=best+budget+motherboard" target="_blank">Best Budget Motherboard</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+mid+range+motherboard" target="_blank">Best Mid-Range Motherboard</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+high+end+motherboard" target="_blank">Best High-End Motherboard</a></li>
-            </ul>
-        </div>
-
-        <!-- Cooling Section -->
-        <div class="content-section" id="cooling">
-            <h2>Best Cooling Solutions for Every Price Range</h2>
-            <p>Keep your PC cool with the best cooling solutions, tailored to your budget.</p>
-            <ul>
-                <li><a href="https://www.amazon.com/s?k=best+budget+cpu+cooler" target="_blank">Best Budget Cooling</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+mid+range+cpu+cooler" target="_blank">Best Mid-Range Cooling</a></li>
-                <li><a href="https://www.amazon.com/s?k=best+high+end+cpu+cooler" target="_blank">Best High-End Cooling</a></li>
-            </ul>
-        </div>
-    </section>
-</body>
-</html>
+# Display all components in the list
+for component, prices in components.items():
+    print(f"{component}:")
+    for price_range, link in prices.items():
+        print(f"  {price_range} - {link}")
+    print()
